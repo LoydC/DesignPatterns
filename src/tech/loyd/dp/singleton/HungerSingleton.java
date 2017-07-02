@@ -1,4 +1,4 @@
-package Singleton;
+package tech.loyd.dp.singleton;
 
 public class HungerSingleton {
 	private static final HungerSingleton instance = new HungerSingleton();
