@@ -4,37 +4,13 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_1QbfMGk1EeeH5u0DWsyaBg" name="junit"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_1QBPg2k1EeeH5u0DWsyaBg" name="factorymethod">
-    <ownedComment xmi:id="_gHeTAGk2EeeH5u0DWsyaBg">
-      <body>&lt;create></body>
-    </ownedComment>
-    <ownedComment xmi:id="_g6BxUGk2EeeH5u0DWsyaBg">
-      <body>&lt;create></body>
-    </ownedComment>
     <ownedComment xmi:id="_hf0mAGk2EeeH5u0DWsyaBg">
       <ownedComment xmi:id="_sNwdcGk4EeeH5u0DWsyaBg">
         <body>&lt;create></body>
       </ownedComment>
       <body>&lt;create></body>
     </ownedComment>
-    <ownedComment xmi:id="_ifU7MGk2EeeH5u0DWsyaBg">
-      <body>&lt;create></body>
-    </ownedComment>
-    <ownedComment xmi:id="_42EBwGk4EeeH5u0DWsyaBg">
-      <ownedComment xmi:id="_8mm7MGk4EeeH5u0DWsyaBg">
-        <body>&lt;create></body>
-      </ownedComment>
-      <body>&lt;create></body>
-    </ownedComment>
-    <ownedComment xmi:id="_-HjwkGk4EeeH5u0DWsyaBg">
-      <ownedComment xmi:id="_-HjwkWk4EeeH5u0DWsyaBg">
-        <body>&lt;create></body>
-      </ownedComment>
-      <body>&lt;create></body>
-    </ownedComment>
-    <ownedComment xmi:id="_scckQGk5EeeH5u0DWsyaBg">
-      <body>&lt;create></body>
-    </ownedComment>
-    <packagedElement xmi:type="uml:Class" xmi:id="_1QBPhGk1EeeH5u0DWsyaBg" name="AddFactory" clientDependency="_1RICwGk1EeeH5u0DWsyaBg _llW4AGk2EeeH5u0DWsyaBg">
+    <packagedElement xmi:type="uml:Class" xmi:id="_1QBPhGk1EeeH5u0DWsyaBg" name="AddFactory" clientDependency="_1RICwGk1EeeH5u0DWsyaBg _VzxegGlKEeeH5u0DWsyaBg">
       <interfaceRealization xmi:id="_1RICwGk1EeeH5u0DWsyaBg" name="Factory&lt;Integer>" supplier="_1QE54Gk1EeeH5u0DWsyaBg" client="_1QBPhGk1EeeH5u0DWsyaBg" contract="_1QE54Gk1EeeH5u0DWsyaBg"/>
       <ownedOperation xmi:id="_1RICwWk1EeeH5u0DWsyaBg" name="createOperator" visibility="public">
         <ownedParameter xmi:id="_1RICwmk1EeeH5u0DWsyaBg" name="return" type="_1QFg8Gk1EeeH5u0DWsyaBg" direction="return"/>
@@ -90,13 +66,12 @@
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_1QHWIGk1EeeH5u0DWsyaBg" name="MultiFactory" clientDependency="_1ROwcGk1EeeH5u0DWsyaBg _madUAGk2EeeH5u0DWsyaBg">
-      <interfaceRealization xmi:id="_1ROwcGk1EeeH5u0DWsyaBg" name="Factory&lt;Integer>" supplier="_1QE54Gk1EeeH5u0DWsyaBg" client="_1QHWIGk1EeeH5u0DWsyaBg" contract="_1QE54Gk1EeeH5u0DWsyaBg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1QHWIGk1EeeH5u0DWsyaBg" name="MultiFactory" clientDependency="_VDnM4GlKEeeH5u0DWsyaBg">
       <ownedOperation xmi:id="_1ROwcWk1EeeH5u0DWsyaBg" name="createOperator" visibility="public">
         <ownedParameter xmi:id="_1ROwcmk1EeeH5u0DWsyaBg" name="return" type="_1QFg8Gk1EeeH5u0DWsyaBg" direction="return"/>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_LXw302k4EeeH5u0DWsyaBg" name="MinsFactory" clientDependency="_LYtTAWk4EeeH5u0DWsyaBg _f1zCQGk4EeeH5u0DWsyaBg _qKx5EGk4EeeH5u0DWsyaBg">
+    <packagedElement xmi:type="uml:Class" xmi:id="_LXw302k4EeeH5u0DWsyaBg" name="MinsFactory" clientDependency="_LYtTAWk4EeeH5u0DWsyaBg _qKx5EGk4EeeH5u0DWsyaBg _Vb6YIGlKEeeH5u0DWsyaBg">
       <interfaceRealization xmi:id="_LYtTAWk4EeeH5u0DWsyaBg" name="Factory&lt;Integer>" client="_LXw302k4EeeH5u0DWsyaBg"/>
       <interfaceRealization xmi:id="_qKx5EGk4EeeH5u0DWsyaBg" name="InterfaceRealization1" supplier="_1QE54Gk1EeeH5u0DWsyaBg" client="_LXw302k4EeeH5u0DWsyaBg" contract="_1QE54Gk1EeeH5u0DWsyaBg"/>
       <ownedOperation xmi:id="_LYtTA2k4EeeH5u0DWsyaBg" name="createOperator" visibility="public">
@@ -117,19 +92,19 @@
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_FZNj02k6EeeH5u0DWsyaBg" name="User" clientDependency="_O3OWYGk6EeeH5u0DWsyaBg _PizqAGk6EeeH5u0DWsyaBg _QVBKEGk6EeeH5u0DWsyaBg">
+    <packagedElement xmi:type="uml:Class" xmi:id="_FZNj02k6EeeH5u0DWsyaBg" name="User" clientDependency="_Wl10oGlKEeeH5u0DWsyaBg _XuL8wGlKEeeH5u0DWsyaBg _YV5dAGlKEeeH5u0DWsyaBg">
       <ownedOperation xmi:id="_FZq20Gk6EeeH5u0DWsyaBg" name="testAdd" visibility="public"/>
       <ownedOperation xmi:id="_FZsE8Gk6EeeH5u0DWsyaBg" name="testMultiplication" visibility="public"/>
       <ownedOperation xmi:id="_FZtTEGk6EeeH5u0DWsyaBg" name="testMinsplication" visibility="public"/>
     </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_llW4AGk2EeeH5u0DWsyaBg" name="Dependency1" supplier="_1QDrwGk1EeeH5u0DWsyaBg" client="_1QBPhGk1EeeH5u0DWsyaBg"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_madUAGk2EeeH5u0DWsyaBg" name="Dependency2" supplier="_1QGIAGk1EeeH5u0DWsyaBg" client="_1QHWIGk1EeeH5u0DWsyaBg"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_nZPQcGk2EeeH5u0DWsyaBg" name="Dependency3" supplier="_1QBPhGk1EeeH5u0DWsyaBg"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_n9LrAGk2EeeH5u0DWsyaBg" name="Dependency4" supplier="_1QHWIGk1EeeH5u0DWsyaBg"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_f1zCQGk4EeeH5u0DWsyaBg" name="Dependency5" supplier="_4r09IGk3EeeH5u0DWsyaBg" client="_LXw302k4EeeH5u0DWsyaBg"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_nY5nUGk4EeeH5u0DWsyaBg" name="Dependency6" supplier="_LXw302k4EeeH5u0DWsyaBg"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_O3OWYGk6EeeH5u0DWsyaBg" name="Dependency7" supplier="_1QHWIGk1EeeH5u0DWsyaBg" client="_FZNj02k6EeeH5u0DWsyaBg"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_PizqAGk6EeeH5u0DWsyaBg" name="Dependency8" supplier="_LXw302k4EeeH5u0DWsyaBg" client="_FZNj02k6EeeH5u0DWsyaBg"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_QVBKEGk6EeeH5u0DWsyaBg" name="Dependency9" supplier="_1QBPhGk1EeeH5u0DWsyaBg" client="_FZNj02k6EeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_VDnM4GlKEeeH5u0DWsyaBg" name="Usage1" supplier="_1QGIAGk1EeeH5u0DWsyaBg" client="_1QHWIGk1EeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Vb6YIGlKEeeH5u0DWsyaBg" name="Usage2" supplier="_4r09IGk3EeeH5u0DWsyaBg" client="_LXw302k4EeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_VzxegGlKEeeH5u0DWsyaBg" name="Usage3" supplier="_1QDrwGk1EeeH5u0DWsyaBg" client="_1QBPhGk1EeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Wl10oGlKEeeH5u0DWsyaBg" name="Usage4" supplier="_1QHWIGk1EeeH5u0DWsyaBg" client="_FZNj02k6EeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_XuL8wGlKEeeH5u0DWsyaBg" name="Usage5" supplier="_LXw302k4EeeH5u0DWsyaBg" client="_FZNj02k6EeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_YV5dAGlKEeeH5u0DWsyaBg" name="Usage6" supplier="_1QBPhGk1EeeH5u0DWsyaBg" client="_FZNj02k6EeeH5u0DWsyaBg"/>
 </uml:Model>

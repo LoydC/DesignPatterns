@@ -6,25 +6,13 @@
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_1QBPg2k1EeeH5u0DWsyaBg" name="factorymethod">
-    <ownedComment xmi:id="_gHeTAGk2EeeH5u0DWsyaBg">
-      <body>&lt;create></body>
-    </ownedComment>
-    <ownedComment xmi:id="_g6BxUGk2EeeH5u0DWsyaBg">
-      <body>&lt;create></body>
-    </ownedComment>
-    <ownedComment xmi:id="_hf0mAGk2EeeH5u0DWsyaBg">
-      <body>&lt;create></body>
-    </ownedComment>
-    <ownedComment xmi:id="_ifU7MGk2EeeH5u0DWsyaBg">
-      <body>&lt;create></body>
-    </ownedComment>
-    <packagedElement xmi:type="uml:Class" xmi:id="_1QBPhGk1EeeH5u0DWsyaBg" name="AddFactory" clientDependency="_1RICwGk1EeeH5u0DWsyaBg _llW4AGk2EeeH5u0DWsyaBg">
+    <packagedElement xmi:type="uml:Class" xmi:id="_1QBPhGk1EeeH5u0DWsyaBg" name="AddFactory" clientDependency="_1RICwGk1EeeH5u0DWsyaBg _9zsJoGlJEeeH5u0DWsyaBg">
       <interfaceRealization xmi:id="_1RICwGk1EeeH5u0DWsyaBg" name="Factory&lt;Integer>" supplier="_1QE54Gk1EeeH5u0DWsyaBg" client="_1QBPhGk1EeeH5u0DWsyaBg" contract="_1QE54Gk1EeeH5u0DWsyaBg"/>
       <ownedOperation xmi:id="_1RICwWk1EeeH5u0DWsyaBg" name="createOperator" visibility="public">
         <ownedParameter xmi:id="_1RICwmk1EeeH5u0DWsyaBg" name="return" type="_1QFg8Gk1EeeH5u0DWsyaBg" direction="return"/>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_1QCdoGk1EeeH5u0DWsyaBg" name="User" clientDependency="_nZPQcGk2EeeH5u0DWsyaBg _n9LrAGk2EeeH5u0DWsyaBg">
+    <packagedElement xmi:type="uml:Class" xmi:id="_1QCdoGk1EeeH5u0DWsyaBg" name="User" clientDependency="_AXaDkGlKEeeH5u0DWsyaBg _AxpvkGlKEeeH5u0DWsyaBg">
       <ownedOperation xmi:id="_1RJQ4Gk1EeeH5u0DWsyaBg" name="testAdd" visibility="public"/>
       <ownedOperation xmi:id="_1RJ38Gk1EeeH5u0DWsyaBg" name="testMultiplication" visibility="public"/>
     </packagedElement>
@@ -78,15 +66,15 @@
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_1QHWIGk1EeeH5u0DWsyaBg" name="MultiFactory" clientDependency="_1ROwcGk1EeeH5u0DWsyaBg _madUAGk2EeeH5u0DWsyaBg">
+    <packagedElement xmi:type="uml:Class" xmi:id="_1QHWIGk1EeeH5u0DWsyaBg" name="MultiFactory" clientDependency="_1ROwcGk1EeeH5u0DWsyaBg _-RkYcGlJEeeH5u0DWsyaBg">
       <interfaceRealization xmi:id="_1ROwcGk1EeeH5u0DWsyaBg" name="Factory&lt;Integer>" supplier="_1QE54Gk1EeeH5u0DWsyaBg" client="_1QHWIGk1EeeH5u0DWsyaBg" contract="_1QE54Gk1EeeH5u0DWsyaBg"/>
       <ownedOperation xmi:id="_1ROwcWk1EeeH5u0DWsyaBg" name="createOperator" visibility="public">
         <ownedParameter xmi:id="_1ROwcmk1EeeH5u0DWsyaBg" name="return" type="_1QFg8Gk1EeeH5u0DWsyaBg" direction="return"/>
       </ownedOperation>
     </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_llW4AGk2EeeH5u0DWsyaBg" name="Dependency1" supplier="_1QDrwGk1EeeH5u0DWsyaBg" client="_1QBPhGk1EeeH5u0DWsyaBg"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_madUAGk2EeeH5u0DWsyaBg" name="Dependency2" supplier="_1QGIAGk1EeeH5u0DWsyaBg" client="_1QHWIGk1EeeH5u0DWsyaBg"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_nZPQcGk2EeeH5u0DWsyaBg" name="Dependency3" supplier="_1QBPhGk1EeeH5u0DWsyaBg" client="_1QCdoGk1EeeH5u0DWsyaBg"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_n9LrAGk2EeeH5u0DWsyaBg" name="Dependency4" supplier="_1QHWIGk1EeeH5u0DWsyaBg" client="_1QCdoGk1EeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_9zsJoGlJEeeH5u0DWsyaBg" name="Usage1" supplier="_1QDrwGk1EeeH5u0DWsyaBg" client="_1QBPhGk1EeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_-RkYcGlJEeeH5u0DWsyaBg" name="Usage2" supplier="_1QGIAGk1EeeH5u0DWsyaBg" client="_1QHWIGk1EeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_AXaDkGlKEeeH5u0DWsyaBg" name="Usage3" supplier="_1QBPhGk1EeeH5u0DWsyaBg" client="_1QCdoGk1EeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_AxpvkGlKEeeH5u0DWsyaBg" name="Usage4" supplier="_1QHWIGk1EeeH5u0DWsyaBg" client="_1QCdoGk1EeeH5u0DWsyaBg"/>
 </uml:Model>

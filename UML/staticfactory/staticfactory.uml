@@ -1,96 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="staticfactory">
-  <packagedElement xmi:type="uml:Package" xmi:id="_EFBZEGkvEeeH5u0DWsyaBg" name="tech">
-    <packagedElement xmi:type="uml:Package" xmi:id="_EFBZEWkvEeeH5u0DWsyaBg" name="loyd">
-      <packagedElement xmi:type="uml:Package" xmi:id="_EFBZEmkvEeeH5u0DWsyaBg" name="dp">
-        <packagedElement xmi:type="uml:Package" xmi:id="_EFBZE2kvEeeH5u0DWsyaBg" name="staticfactory">
-          <ownedComment xmi:id="_in4MgGkxEeeH5u0DWsyaBg">
-            <body>&lt;create></body>
-          </ownedComment>
-          <ownedComment xmi:id="_jaJW8GkxEeeH5u0DWsyaBg">
-            <body>&lt;create></body>
-          </ownedComment>
-          <packagedElement xmi:type="uml:Class" xmi:id="_EFBZFGkvEeeH5u0DWsyaBg" name="AddOperator" clientDependency="_EGc8cGkvEeeH5u0DWsyaBg">
-            <interfaceRealization xmi:id="_EGc8cGkvEeeH5u0DWsyaBg" name="Operator&lt;Integer>" supplier="_EFFqgGkvEeeH5u0DWsyaBg" client="_EFBZFGkvEeeH5u0DWsyaBg" contract="_EFFqgGkvEeeH5u0DWsyaBg"/>
-            <ownedOperation xmi:id="_EGdjgWkvEeeH5u0DWsyaBg" name="getResult" visibility="public">
-              <ownedParameter xmi:id="_EGdjgmkvEeeH5u0DWsyaBg" name="t">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EGdjg2kvEeeH5u0DWsyaBg" value="*"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EGdjhGkvEeeH5u0DWsyaBg"/>
-              </ownedParameter>
-              <ownedParameter xmi:id="_EGdjhWkvEeeH5u0DWsyaBg" name="return" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-              </ownedParameter>
-            </ownedOperation>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_EFDOQGkvEeeH5u0DWsyaBg" name="User">
-            <ownedOperation xmi:id="_EGexoGkvEeeH5u0DWsyaBg" name="testAdd" visibility="public"/>
-            <ownedOperation xmi:id="_EGfYsGkvEeeH5u0DWsyaBg" name="testMultiplication" visibility="public"/>
-            <ownedOperation xmi:id="_EGgm0GkvEeeH5u0DWsyaBg" name="testAddName" visibility="public"/>
-            <ownedOperation xmi:id="_EGhN4GkvEeeH5u0DWsyaBg" name="testMultiplicationName" visibility="public"/>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_EFFqgGkvEeeH5u0DWsyaBg" name="Operator">
-            <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_EFFqgWkvEeeH5u0DWsyaBg" parameter="_EFFqgmkvEeeH5u0DWsyaBg">
-              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_EFFqgmkvEeeH5u0DWsyaBg" parameteredElement="_EFFqg2kvEeeH5u0DWsyaBg">
-                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_EFFqg2kvEeeH5u0DWsyaBg" name="T" templateParameter="_EFFqgmkvEeeH5u0DWsyaBg"/>
-              </ownedParameter>
-            </ownedTemplateSignature>
-            <ownedOperation xmi:id="_EGh08GkvEeeH5u0DWsyaBg" name="getResult" visibility="public">
-              <ownedParameter xmi:id="_EGh08WkvEeeH5u0DWsyaBg" name="t" type="_EFFqg2kvEeeH5u0DWsyaBg">
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EGh08mkvEeeH5u0DWsyaBg" value="*"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EGh082kvEeeH5u0DWsyaBg"/>
-              </ownedParameter>
-              <ownedParameter xmi:id="_EGh09GkvEeeH5u0DWsyaBg" name="return" type="_EFFqg2kvEeeH5u0DWsyaBg" direction="return"/>
-            </ownedOperation>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_EFG4oGkvEeeH5u0DWsyaBg" name="OperatorFactory" clientDependency="_nraCsGkvEeeH5u0DWsyaBg _oa8pQGkvEeeH5u0DWsyaBg">
-            <ownedOperation xmi:id="_EGicAGkvEeeH5u0DWsyaBg" name="createOperator" visibility="public" isStatic="true">
-              <ownedComment xmi:id="_EGjDEGkvEeeH5u0DWsyaBg">
-                <body>/** 
- * 策略一：根据传入的operator名进行实例化对象 
- */
-</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_EGicAWkvEeeH5u0DWsyaBg" name="operName">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-              <ownedParameter xmi:id="_EGicAmkvEeeH5u0DWsyaBg" name="return" type="_EFFqgGkvEeeH5u0DWsyaBg" direction="return"/>
-            </ownedOperation>
-            <ownedOperation xmi:id="_EGjDEWkvEeeH5u0DWsyaBg" name="createAddOper" visibility="public" isStatic="true">
-              <ownedComment xmi:id="_EGjqIGkvEeeH5u0DWsyaBg">
-                <body>/** 
- * 策略二：直接调用构造相应实例的方法 
- */
-</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_EGjDEmkvEeeH5u0DWsyaBg" name="return" type="_EFFqgGkvEeeH5u0DWsyaBg" direction="return"/>
-            </ownedOperation>
-            <ownedOperation xmi:id="_EGkRMGkvEeeH5u0DWsyaBg" name="createMultiOper" visibility="public" isStatic="true">
-              <ownedParameter xmi:id="_EGkRMWkvEeeH5u0DWsyaBg" name="return" type="_EFFqgGkvEeeH5u0DWsyaBg" direction="return"/>
-            </ownedOperation>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_EFIt0GkvEeeH5u0DWsyaBg" name="MultiOperator" clientDependency="_EGk4QGkvEeeH5u0DWsyaBg">
-            <interfaceRealization xmi:id="_EGk4QGkvEeeH5u0DWsyaBg" name="Operator&lt;Integer>" supplier="_EFFqgGkvEeeH5u0DWsyaBg" client="_EFIt0GkvEeeH5u0DWsyaBg" contract="_EFFqgGkvEeeH5u0DWsyaBg"/>
-            <ownedOperation xmi:id="_EGk4QWkvEeeH5u0DWsyaBg" name="getResult" visibility="public">
-              <ownedParameter xmi:id="_EGk4QmkvEeeH5u0DWsyaBg" name="t">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EGk4Q2kvEeeH5u0DWsyaBg" value="*"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EGk4RGkvEeeH5u0DWsyaBg"/>
-              </ownedParameter>
-              <ownedParameter xmi:id="_EGk4RWkvEeeH5u0DWsyaBg" name="return" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-              </ownedParameter>
-            </ownedOperation>
-          </packagedElement>
-        </packagedElement>
-      </packagedElement>
-    </packagedElement>
-  </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_EFprMGkvEeeH5u0DWsyaBg" name="org">
     <packagedElement xmi:type="uml:Package" xmi:id="_EFprMWkvEeeH5u0DWsyaBg" name="junit">
       <packagedElement xmi:type="uml:DataType" xmi:id="_EFprMmkvEeeH5u0DWsyaBg" name="Test"/>
     </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_nraCsGkvEeeH5u0DWsyaBg" name="Dependency1" supplier="_EFIt0GkvEeeH5u0DWsyaBg" client="_EFG4oGkvEeeH5u0DWsyaBg"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_oa8pQGkvEeeH5u0DWsyaBg" name="Dependency2" supplier="_EFBZFGkvEeeH5u0DWsyaBg" client="_EFG4oGkvEeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_EFBZE2kvEeeH5u0DWsyaBg" name="staticfactory">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EFBZFGkvEeeH5u0DWsyaBg" name="AddOperator" clientDependency="_EGc8cGkvEeeH5u0DWsyaBg">
+      <interfaceRealization xmi:id="_EGc8cGkvEeeH5u0DWsyaBg" name="Operator&lt;Integer>" supplier="_EFFqgGkvEeeH5u0DWsyaBg" client="_EFBZFGkvEeeH5u0DWsyaBg" contract="_EFFqgGkvEeeH5u0DWsyaBg"/>
+      <ownedOperation xmi:id="_EGdjgWkvEeeH5u0DWsyaBg" name="getResult" visibility="public">
+        <ownedParameter xmi:id="_EGdjgmkvEeeH5u0DWsyaBg" name="t">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EGdjg2kvEeeH5u0DWsyaBg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EGdjhGkvEeeH5u0DWsyaBg"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_EGdjhWkvEeeH5u0DWsyaBg" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EFDOQGkvEeeH5u0DWsyaBg" name="User" clientDependency="_5l-WkGlKEeeH5u0DWsyaBg">
+      <ownedOperation xmi:id="_EGexoGkvEeeH5u0DWsyaBg" name="testAdd" visibility="public"/>
+      <ownedOperation xmi:id="_EGfYsGkvEeeH5u0DWsyaBg" name="testMultiplication" visibility="public"/>
+      <ownedOperation xmi:id="_EGgm0GkvEeeH5u0DWsyaBg" name="testAddName" visibility="public"/>
+      <ownedOperation xmi:id="_EGhN4GkvEeeH5u0DWsyaBg" name="testMultiplicationName" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_EFFqgGkvEeeH5u0DWsyaBg" name="Operator">
+      <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_EFFqgWkvEeeH5u0DWsyaBg" parameter="_EFFqgmkvEeeH5u0DWsyaBg">
+        <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_EFFqgmkvEeeH5u0DWsyaBg" parameteredElement="_EFFqg2kvEeeH5u0DWsyaBg">
+          <ownedParameteredElement xmi:type="uml:Class" xmi:id="_EFFqg2kvEeeH5u0DWsyaBg" name="T" templateParameter="_EFFqgmkvEeeH5u0DWsyaBg"/>
+        </ownedParameter>
+      </ownedTemplateSignature>
+      <ownedOperation xmi:id="_EGh08GkvEeeH5u0DWsyaBg" name="getResult" visibility="public">
+        <ownedParameter xmi:id="_EGh08WkvEeeH5u0DWsyaBg" name="t" type="_EFFqg2kvEeeH5u0DWsyaBg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EGh08mkvEeeH5u0DWsyaBg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EGh082kvEeeH5u0DWsyaBg"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_EGh09GkvEeeH5u0DWsyaBg" name="return" type="_EFFqg2kvEeeH5u0DWsyaBg" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EFG4oGkvEeeH5u0DWsyaBg" name="OperatorFactory" clientDependency="_rcghgGlKEeeH5u0DWsyaBg _3neCgGlKEeeH5u0DWsyaBg">
+      <ownedOperation xmi:id="_EGicAGkvEeeH5u0DWsyaBg" name="createOperator" visibility="public" isStatic="true">
+        <ownedComment xmi:id="_EGjDEGkvEeeH5u0DWsyaBg">
+          <body>/** 
+ * 策略一：根据传入的operator名进行实例化对象 
+ */
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_EGicAWkvEeeH5u0DWsyaBg" name="operName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_EGicAmkvEeeH5u0DWsyaBg" name="return" type="_EFFqgGkvEeeH5u0DWsyaBg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_EGjDEWkvEeeH5u0DWsyaBg" name="createAddOper" visibility="public" isStatic="true">
+        <ownedComment xmi:id="_EGjqIGkvEeeH5u0DWsyaBg">
+          <body>/** 
+ * 策略二：直接调用构造相应实例的方法 
+ */
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_EGjDEmkvEeeH5u0DWsyaBg" name="return" type="_EFFqgGkvEeeH5u0DWsyaBg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_EGkRMGkvEeeH5u0DWsyaBg" name="createMultiOper" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_EGkRMWkvEeeH5u0DWsyaBg" name="return" type="_EFFqgGkvEeeH5u0DWsyaBg" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EFIt0GkvEeeH5u0DWsyaBg" name="MultiOperator" clientDependency="_EGk4QGkvEeeH5u0DWsyaBg">
+      <interfaceRealization xmi:id="_EGk4QGkvEeeH5u0DWsyaBg" name="Operator&lt;Integer>" supplier="_EFFqgGkvEeeH5u0DWsyaBg" client="_EFIt0GkvEeeH5u0DWsyaBg" contract="_EFFqgGkvEeeH5u0DWsyaBg"/>
+      <ownedOperation xmi:id="_EGk4QWkvEeeH5u0DWsyaBg" name="getResult" visibility="public">
+        <ownedParameter xmi:id="_EGk4QmkvEeeH5u0DWsyaBg" name="t">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EGk4Q2kvEeeH5u0DWsyaBg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EGk4RGkvEeeH5u0DWsyaBg"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_EGk4RWkvEeeH5u0DWsyaBg" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_rcghgGlKEeeH5u0DWsyaBg" name="Usage1" supplier="_EFIt0GkvEeeH5u0DWsyaBg" client="_EFG4oGkvEeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_3neCgGlKEeeH5u0DWsyaBg" name="Usage2" supplier="_EFBZFGkvEeeH5u0DWsyaBg" client="_EFG4oGkvEeeH5u0DWsyaBg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_5l-WkGlKEeeH5u0DWsyaBg" name="Usage3" supplier="_EFG4oGkvEeeH5u0DWsyaBg" client="_EFDOQGkvEeeH5u0DWsyaBg"/>
 </uml:Model>
