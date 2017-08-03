@@ -3,7 +3,7 @@
 > 总结和实现设计模式，不断更新......
 
 <h1 align="center">
-	<img width="800" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502334285&di=995bb06fda6ef3dcfe9ec9d2cfad4a68&imgtype=jpg&er=1&src=http%3A%2F%2Fec4.images-amazon.com%2Fimages%2FI%2F71gMe-hdTgL._SL1500_.jpg" alt="Awesome">
+	<img width="650" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502334285&di=995bb06fda6ef3dcfe9ec9d2cfad4a68&imgtype=jpg&er=1&src=http%3A%2F%2Fec4.images-amazon.com%2Fimages%2FI%2F71gMe-hdTgL._SL1500_.jpg" alt="Awesome">
 	<br>
 	<br>
 </h1>
